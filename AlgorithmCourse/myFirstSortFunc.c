@@ -2,10 +2,9 @@
 
 void myFirstSortFunc(int data[], int size) {
 
-	//--------------------------
-	//
-	//	write your code here
-	//
-	//--------------------------
+	int i;
+	int j;
+
+
 
 }
