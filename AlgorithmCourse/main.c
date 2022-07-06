@@ -18,6 +18,8 @@ int main() {
 	for(int i = 0; i < DATA_SZIE; i++) printf(" %d", data[i]);
 	printf("\n\n");
 
+	
+
 
 	printf("before insertion sort (array ver) :");
 	for(int i = 0; i < DATA_SZIE; i++) printf(" %d", data[i]);
