@@ -1,34 +1,40 @@
+#include "resetDataset.h"
 #include "selectionSortArray.h"
 #include "insertionSortArray.h"
 #include <stdio.h>
+#include <time.h>
 
-#define DATA_SZIE 10
+#define DATA_SIZE 10
 
 int main() {
 	
-	int data[DATA_SZIE]={5,1,9,2,6,7,3,8,0,4};
+	int data[DATA_SIZE];
+	
+	srand(time(NULL));
 
+	resetDataset(data, DATA_SIZE, RANDOM);
 	printf("before selection sort (array ver) :");
-	for(int i = 0; i < DATA_SZIE; i++) printf(" %d", data[i]);
+	for(int i = 0; i < DATA_SIZE; i++) printf(" %d", data[i]);
 	printf("\n\n");
 
-	selectionSortArray(data, DATA_SZIE);
+	selectionSortArray(data, DATA_SIZE);
 
 	printf("after selection sort (array ver) :");
-	for(int i = 0; i < DATA_SZIE; i++) printf(" %d", data[i]);
+	for(int i = 0; i < DATA_SIZE; i++) printf(" %d", data[i]);
 	printf("\n\n");
 
 	
 
 
+	resetDataset(data, DATA_SIZE, RANDOM);
 	printf("before insertion sort (array ver) :");
-	for(int i = 0; i < DATA_SZIE; i++) printf(" %d", data[i]);
+	for(int i = 0; i < DATA_SIZE; i++) printf(" %d", data[i]);
 	printf("\n\n");
 
-	insertionSortArray(data, DATA_SZIE);
+	insertionSortArray(data, DATA_SIZE);
 
 	printf("after insertion sort (array ver) :");
-	for(int i = 0; i < DATA_SZIE; i++) printf(" %d", data[i]);
+	for(int i = 0; i < DATA_SIZE; i++) printf(" %d", data[i]);
 	printf("\n\n");
 
 }
