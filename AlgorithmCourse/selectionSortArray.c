@@ -2,7 +2,6 @@
 
 void selectionSortArray(int data[], int size) {
 
-	// write code here
 	int f = -1;
 	int min;
 	int min_idx;
