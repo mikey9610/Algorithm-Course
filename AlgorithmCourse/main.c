@@ -48,7 +48,7 @@ int main() {
 
 	selectionSortList(data, DATA_SIZE);
 
-
+	printf("0\n");
 	printf("after selection sort (linkedlist ver) :");
 	for (int i = 0; i < DATA_SIZE; i++) printf(" %d", data[i]);
 	printf("\n\n");
